@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+:root {
+  --strong-cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+  --light-gray: hsl(0, 0%, 98%);
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+  color: var(--grayish-blue);
+  background-color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: var(--dark-grayish-blue);
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+p {
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 35px;
+}
+
+.download-buttons button {
+  border: none;
+  border-radius: 30px;
+  padding: 14px 32px;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.download-buttons button:first-child {
+  background-color: var(--strong-cyan);
+  border-bottom: 3px solid hsl(171, 66%, 35%);
+}
+
+.download-buttons button:last-child {
+  background-color: var(--light-blue);
+  border-bottom: 3px solid hsl(233, 100%, 60%);
+}
+
+.Hero {
+  padding: 100px 20px 50px;
+  background-image: url("./images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto; 
+  width: 100%;
+}
+
+.Hero img {
+  margin-bottom: 40px;
+}
+
+
+.sectoin1-header {
+  margin-bottom: 60px;
+}
+
+.about-contianer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  text-align: left;
+}
+
+.about-contianer img {
+  max-width: 500px;
+}
+
+.abou-text {
+  width: 350px;
+}
+
+.abou-text h1 {
+  font-size: 20px;
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+.abou-text p {
+  width: 100%;
+  margin: 0;
+}
+
+
+.Accessibility img {
+  margin-top: 50px;
+}
+
+
+.workflow-header {
+  margin-bottom: 50px;
+}
+
+.Workflow > div:last-child {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.Create-blacklists,
+.Plain-text-snippets,
+.Sneak-preview {
+  width: 300px;
+}
+
+.Create-blacklists h1,
+.Plain-text-snippets h1,
+.Sneak-preview h1 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+
+.Logos-Banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 80px 0;
+}
+
+footer.attribution {
+  background-color: var(--light-gray);
+  padding: 40px 120px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  color: var(--grayish-blue);
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.footer-logo {
+  width: 55px;
+  height: auto;
+}
+
+
+.Links {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 60px;
+  row-gap: 15px;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.Links a {
+  color: var(--dark-grayish-blue);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.Links a:hover {
+  color: var(--strong-cyan);
+}
+
+
+.Social {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+}
+
+.Social img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: filter 0.2s ease;
+}
+
+.Social img:hover {
+  filter: invert(53%) sepia(68%) saturate(463%) hue-rotate(124deg) brightness(90%) contrast(88%);
+}
+
+
+footer.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+footer.attribution a {
+  color: var(--dark-grayish-blue);
+  font-weight: 600;
+}
+
+
+footer.attribution > a,
+footer.attribution {
+  flex-basis: 100%; 
+}
+
+
+.footer-left, 
+.Social {
+  flex-basis: auto;
+  margin-bottom: 30px;
+}
+
+
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  section {
+    padding: 40px 20px;
+  }
+
+ 
+  p, 
+  .abou-text, 
+  .text_box, 
+  .workflow-header {
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: center;
+  }
+
+
+  .Hero {
+    padding: 60px 20px 30px;
+    background-size: contain;
+  }
+
+  .Hero h1 {
+    font-size: 28px;
+  }
+
+  .download-buttons {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .download-buttons button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .about-contianer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .about-contianer img {
+    max-width: 100%;
+    transform: none;
+  }
+
+  .abou-text {
+    text-align: center;
+  }
+
+  .abou-text h1 {
+    font-size: 20px;
+    margin-top: 24px;
+  }
+
+  .Workflow > div:last-child {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .Create-blacklists,
+  .Plain-text-snippets,
+  .Sneak-preview {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  
+  .Logos-Banner {
+    flex-direction: column;
+    gap: 40px;
+    margin: 50px 0;
+  }
+
+  footer.attribution {
+    flex-direction: column;
+    padding: 40px 20px 20px;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-left {
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 0;
+  }
+
+  .Links {
+    grid-template-columns: 1fr;
+    text-align: center;
+    row-gap: 16px;
+  }
+
+  .Social {
+    margin-bottom: 10px;
+  }
+}
