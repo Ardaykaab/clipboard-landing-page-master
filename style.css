@@ -1,0 +1,125 @@
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+  color: black;
+  background-color: white;
+}
+
+section,
+header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.logo {
+  width: 125px;
+  margin-bottom: 40px;
+}
+
+h1 {
+  color: hs1(210, 10%, 33%);
+  font-size: 32px;
+  font-weight: 600;
+}
+
+header a {
+  display: block;
+  padding: 15px 30px;
+  margin: 10px 10px;
+  width: auto;
+  text-decoration: none;
+  color: white;
+  border-radius: 25px;
+}
+
+.ios-button {
+  background-color: hsl(152, 96%, 10%);
+}
+
+.mac-button {
+  background-color: hsl(233, 95%, 22%);
+}
+
+.ios-button:hover {
+  background-color: hsl(137, 49%, 66%);
+}
+
+.mac-button:hover {
+  background-color: hsl(194, 72%, 78%);
+}
+
+.hero-text {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  header a {
+    display: inline-block;
+  }
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+.social-icons img:hover {
+  opacity: 0.6;
+}
+footer nav a:hover {
+  opacity: 0.6;
+}
+
+footer nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.bottom-ios-button:hover,
+.bottom-mac-button:hover {
+  opacity: 0.5;
+}
+
+.snippet-features {
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .snippet-features {
+    grid-template-columns: 1fr;
+  }
+
+  .snippet-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+.attribution a:hover {
+  opacity: 0.6;
+}
+
+header {
+  background-image: url("./images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+@media (max-width: 767px) {
+  header {
+    background-image: url("./images/bg-header-mobile.png");
+  }
+}
