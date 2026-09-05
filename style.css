@@ -1,0 +1,345 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+  text-align: center;
+  padding: 120px 32px 80px;
+
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.78),
+      rgba(255, 255, 255, 0.78)
+    ),
+    url("./images/bg-header-mobile.png");
+
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.hero-logo {
+  width: 50px;
+  margin-bottom: 48px;
+}
+
+.hero-title {
+  font-size: 28px;
+  line-height: 1.2;
+  margin: 0 0 16px;
+}
+
+.hero-description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0 auto 32px;
+  max-width: 600px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 300ms ease;
+}
+
+.btn-ios {
+  background-color: #26baa4;
+}
+
+.btn-ios:hover {
+  background-color: #1f9d8b;
+}
+
+.btn-mac {
+  background-color: #6173ff;
+}
+
+.btn-mac:hover {
+  background-color: #4f5fd4;
+}
+
+/* ================= SHARED ================= */
+
+.section-title {
+  font-size: 28px;
+  line-height: 1.3;
+  margin: 0 0 16px;
+}
+
+.section-description {
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ================= INTRO ================= */
+
+.intro {
+  text-align: center;
+  padding: 48px 32px;
+}
+
+/* ================= FEATURES ================= */
+
+.features {
+  text-align: center;
+  padding: 48px 32px;
+}
+
+.features-image {
+  width: 100%;
+  max-width: 500px;
+  margin: 48px auto;
+}
+
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.feature-title {
+  font-size: 24px;
+  margin: 0 0 12px;
+}
+
+.feature-list p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ================= DEVICES ================= */
+
+.devices {
+  text-align: center;
+  padding: 80px 32px;
+}
+
+.devices-image {
+  width: 100%;
+  max-width: 650px;
+  margin: 48px auto 0;
+}
+
+/* ================= WORKFLOW ================= */
+
+.workflow {
+  text-align: center;
+  padding: 80px 32px;
+}
+
+.workflow-features {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 60px;
+}
+
+.workflow-item {
+  flex: 1;
+}
+
+.workflow-item img {
+  width: 40px;
+  margin: 0 auto 24px;
+}
+
+.workflow-item h3 {
+  font-size: 24px;
+  margin: 0 0 12px;
+}
+
+.workflow-item p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0 auto;
+}
+
+/* ================= COMPANY LOGOS ================= */
+
+.company-logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  margin-top: 60px;
+}
+
+.company-logos img {
+  max-width: 130px;
+}
+
+/* ================= DOWNLOAD ================= */
+
+.download-section {
+  text-align: center;
+  padding: 100px 32px;
+}
+
+.download-section .section-description {
+  margin-bottom: 32px;
+}
+
+/* ================= FOOTER ================= */
+
+.site-footer {
+  background-color: #f5f6f8;
+  padding: 50px 32px;
+  text-align: center;
+}
+
+.site-footer > img {
+  width: 55px;
+  margin: 0 auto 35px;
+}
+
+.site-footer nav {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  margin-bottom: 35px;
+}
+
+.site-footer nav a {
+  color: #4c545d;
+  text-decoration: none;
+  transition: color 300ms ease;
+}
+
+.site-footer nav a:hover {
+  color: #26baa4;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.social-links img {
+  width: 20px;
+  transition: transform 300ms ease;
+}
+
+.social-links a:hover img {
+  transform: scale(1.15);
+}
+
+/* ================= DESKTOP ================= */
+
+@media (min-width: 768px) {
+
+  /* HERO */
+
+  .hero {
+    background-image:
+      linear-gradient(
+        rgba(255, 255, 255, 0.78),
+        rgba(255, 255, 255, 0.78)
+      ),
+      url("./images/bg-header-desktop.png");
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  /* FEATURES */
+
+  .features {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .features > div {
+    flex: 1;
+  }
+
+  .features-image {
+    max-width: 650px;
+    margin: 0;
+  }
+
+  /* WORKFLOW */
+
+  .workflow-features {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  /* COMPANY LOGOS */
+
+  .company-logos {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    max-width: 1100px;
+    margin: 60px auto 0;
+  }
+
+  /* FOOTER */
+
+  .site-footer {
+    display: grid;
+    grid-template-columns: 120px 1fr 200px;
+    align-items: center;
+    text-align: left;
+    padding: 50px 100px;
+    column-gap: 60px;
+  }
+
+  .site-footer > img {
+    margin: 0;
+  }
+
+  .site-footer nav {
+    grid-template-columns: repeat(2, 120px);
+    gap: 18px 40px;
+    margin: 0;
+  }
+
+  .social-links {
+    justify-content: flex-end;
+  }
+}
+
+/* ================= LARGE DESKTOP ================= */
+
+@media (min-width: 1200px) {
+
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+}
