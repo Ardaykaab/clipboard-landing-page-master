@@ -4,20 +4,13 @@ A solution to the [Frontend Mentor Clipboard landing page challenge](https://www
 
 ## Preview
 
-![Desktop Design](Design/desktop-design.jpg)
+![Desktop Design](preview.jpg)
 
 ## Links
 
 - **Live Site:** _coming soon (deploy via GitHub Pages)_
 - **Original Repo (Ardaykaab):** [github.com/Ardaykaab/clipboard-landing-page-master](https://github.com/Ardaykaab/clipboard-landing-page-master)
 - **My Fork:** [github.com/ZakiOmer22/clipboard-landing-page-master](https://github.com/ZakiOmer22/clipboard-landing-page-master)
-
-## My Profile
-
-| | |
-|---|---|
-| **Name** | Zacki Abdulkadir Omer (Amazook) |
-| **GitHub** | [@ZakiOmer22](https://github.com/ZakiOmer22) |
 
 ## Built With
 
