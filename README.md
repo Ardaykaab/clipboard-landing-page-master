@@ -284,3 +284,37 @@ Ka hor intaadan pull request furin, hubi:
 Challenge-ka asalka ah waxaa leh [Frontend Mentor](https://www.frontendmentor.io?ref=challenge).
 
 **Nasiib Wacan — hadda bilow!** 🚀
+
+
+## 🧑‍💻 My Project
+
+I completed the Clipboard Landing Page using HTML and CSS.
+
+### What I learned
+
+* How to structure a webpage using semantic HTML.
+* How to use CSS Flexbox and Grid for layouts.
+* How to make a website responsive using media queries.
+* How to use CSS variables for reusable colors and values.
+* How to use Git and GitHub to manage my project.
+* How to create a branch, commit changes, push to GitHub, and create a pull request.
+
+### What was difficult
+
+The most challenging part was making the layout responsive on different screen sizes, especially adjusting the footer and making sure there was no horizontal overflow.
+
+I also had to pay attention to spacing, typography, image sizing, and matching the provided desktop and mobile designs.
+
+### Questions
+
+I would like feedback on whether my responsive breakpoints and CSS layout choices can be improved further.
+
+### Technologies
+
+* HTML5
+* CSS3
+* Flexbox
+* CSS Grid
+* Media Queries
+* Git
+* GitHub
