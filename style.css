@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+    color: #9fabb2;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  h1, h2, h3 {
+    color: #4c545d;
+    font-weight: 600;
+  }
+  
+  h1 {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+  
+  h2 {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    line-height: 1.6;
+  }
+  
+  .subtitle, .section-desc {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    padding: 0 20px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    width: 80%;
+    max-width: 300px;
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .btn-primary {
+    background-color: #26baa4;
+  }
+  
+  .btn-primary:hover {
+    background-color: #1f9a87;
+  }
+  
+  .btn-secondary {
+    background-color: #6173ff;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #4d5ce0;
+  }
+
+  .hero {
+    background-image: url('./images/bg-header-mobile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 20px 60px 20px;
+  }
+  
+  .hero .logo {
+    margin-bottom: 40px;
+  }
+  
+  .features-one {
+    padding: 60px 20px;
+  }
+  
+  .features-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+  }
+  
+  .feature-image img {
+    width: 90%;
+    max-width: 600px;
+  }
+  
+  .feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .access-anywhere {
+    padding: 60px 20px;
+  }
+  
+  .devices-image img {
+    width: 90%;
+    max-width: 750px;
+    margin-top: 30px;
+  }
+  
+  .workflow {
+    padding: 60px 20px;
+  }
+  
+  .workflow-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+  
+  .workflow-card img {
+    margin-bottom: 20px;
+  }
+  
+  .partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 20px;
+  }
+  
+  .partners img {
+    max-width: 130px;
+    height: auto;
+  }
+  
+  .cta-bottom {
+    padding: 60px 20px 100px 20px;
+  }
+  
+  .footer {
+    background-color: #f5f6f8;
+    padding: 50px 20px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .footer-logo {
+    width: 55px;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .footer-links a {
+    color: #4c545d;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    color: #26baa4;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 24px;
+  }
+  
+  .social-icons img:hover {
+    filter: opacity(0.6);
+  }
+  
+  @media (min-width: 768px) {
+    
+    .hero {
+      background-image: url('./images/bg-header-desktop.png');
+    }
+  
+    .buttons {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .btn {
+      width: auto;
+    }
+  
+    .features-container {
+      flex-direction: row;
+      align-items: center;
+      margin-top: 60px;
+    }
+  
+    .feature-image {
+      width: 50%;
+    }
+  
+    .feature-image img {
+      width: 100%;
+      margin-left: -50px;
+    }
+  
+    .feature-list {
+      width: 50%;
+      text-align: left;
+      padding-left: 40px;
+    }
+  
+    .workflow-grid {
+      flex-direction: row;
+      justify-content: center;
+      gap: 30px;
+    }
+  
+    .workflow-card {
+      flex: 1;
+    }
+  
+    .partners {
+      flex-direction: row;
+      justify-content: space-around;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+  
+    .footer-container {
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 1100px;
+      margin: 0 auto;
+      text-align: left;
+    }
+  
+    .footer-links {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px 30px;
+    }
+  }
