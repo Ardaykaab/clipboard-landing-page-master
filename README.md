@@ -161,7 +161,7 @@ git push origin solution
 
 **Push** macnaheedu waa: dir shaqadaada GitHub.
 
-### Tallaabo 7 — Pull request
+### Tallaabo 7 — Pull request  
 
 1. Aad repository-gaaga GitHub
 2. Waxaa kuu soo bixi doona badhan yiraahda **Compare & pull request** — guji
