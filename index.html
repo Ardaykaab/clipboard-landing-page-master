@@ -1,35 +1,193 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-
-    <title>Frontend Mentor | Clipboard landing page</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 0.6875rem;
-        text-align: center;
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clipboard Landing Page</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            strongCyan: 'hsl(171, 66%, 44%)',
+            lightBlue: 'hsl(233, 100%, 69%)',
+            darkGrayishBlue: 'hsl(210, 10%, 33%)',
+            grayishBlue: 'hsl(201, 11%, 66%)',
+          },
+          fontFamily: {
+            sans: ['Bai Jamjuree', 'sans-serif'],
+          }
+        }
       }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
-  </head>
-  <body>
-    <footer class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </footer>
-  </body>
+    }
+  </script>
+</head>
+<body class="font-sans text-grayishBlue bg-white text-center">
+
+  <!-- Hero Section -->
+  <!-- 🖼️ SAWIRKA BACKGROUND-KA HEADER-KA:
+       Hadii aad rabto aad background-ka header-ka beddesho, css class-ka hoose ee bg-[url('...')] badal.
+  -->
+  <header class="bg-img scr] bg-no-repeat bg-contain pt-32 pb-20 px-6 max-w-3xl mx-auto">
+    
+    <!-- 🖼️ 1. LOGO-GA WEYN EE UGU SAREEYA -->
+    <img src="images/favicon-32x32.png" alt="Clipboard Logo" class="mx-full-width mb-12 justify-center align-item-center">
+    
+    <h1 class="text-3xl md:text-4xl font-semibold text-darkGrayishBlue mb-4">A history of everything you copy</h1>
+    <p class="mb-10 text-base leading-relaxed">Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.</p>
+    
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <a href="#" class="bg-strongCyan text-white py-3 px-8 rounded-full font-semibold shadow-md hover:opacity-80 transition duration-200">Download for iOS</a>
+      <a href="#" class="bg-lightBlue text-white py-3 px-8 rounded-full font-semibold shadow-md hover:opacity-80 transition duration-200">Download for Mac</a>
+    </div>
+  </header>
+
+  <!-- Keep Track Section -->
+  <section class="py-16 px-6 max-w-7xl mx-auto">
+    <h2 class="text-2xl md:text-3xl font-semibold text-darkGrayishBlue mb-4">Keep track of your snippets</h2>
+    <p class="max-w-2xl mx-auto mb-16 leading-relaxed">Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything.</p>
+    
+    <div class="flex flex-col md:flex-row items-center gap-12 text-center md:text-left">
+      <div class="w-full md:w-1/2 md:-ml-28">
+        
+        <!-- 🖼️ 2. SAWIRKA COMPUTER-KA -->
+        <img src="images/image-computer.png" class="w-full max-w-2xl mx-auto">
+        
+      </div>
+      <div class="w-full md:w-1/2 flex flex-col gap-8 px-4">
+        <div>
+          <h3 class="text-xl font-semibold text-darkGrayishBlue mb-2">Quick Search</h3>
+          <p class="leading-relaxed">Easily search your snippets by content, category, web address, application, and more.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-darkGrayishBlue mb-2">iCloud Sync</h3>
+          <p class="leading-relaxed">Instantly saves and syncs snippets across all your Apple devices.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-darkGrayishBlue mb-2">Complete History</h3>
+          <p class="leading-relaxed">Retrieve any snippets from the first moment you started using the app.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Access Anywhere Section -->
+  <section class="py-16 px-6 max-w-7xl mx-auto">
+    <h2 class="text-2xl md:text-3xl font-semibold text-darkGrayishBlue mb-4">Access Clipboard Anywhere</h2>
+    <p class="max-w-2xl mx-auto mb-12 leading-relaxed">Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.</p>
+    <div class="flex justify-center">
+      
+      <!-- 🖼️ 3. SAWIRKA TALEEFANKA IYO TABLET-KA (DEVICES) -->
+      <img src="images/image-devices.png" alt="Devices Display" class="w-full max-w-4xl">
+      
+    </div>
+  </section>
+
+  <!-- Workflow Section -->
+  <section class="py-16 px-6 max-w-7xl mx-auto">
+    <h2 class="text-2xl md:text-3xl font-semibold text-darkGrayishBlue mb-4">Supercharge your workflow</h2>
+    <p class="max-w-2xl mx-auto mb-16 leading-relaxed">We’ve got the tools to boost your productivity.</p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div class="flex flex-col items-center">
+        
+        <!-- 🖼️ 4. ICON-KA BLACKLIST -->
+        <img src="images/icon-blacklist.svg" alt="Blacklist Icon" class="mb-8 h-10">
+        
+        <h3 class="text-xl font-semibold text-darkGrayishBlue mb-2">Create blacklists</h3>
+        <p class="leading-relaxed">Ensure sensitive information never makes its way to your clipboard by excluding certain apps.</p>
+      </div>
+      <div class="flex flex-col items-center">
+        
+        <!-- 🖼️ 5. ICON-KA TEXT -->
+        <img src="images/icon-text.svg" alt="Text Icon" class="mb-8 h-10">
+        
+        <h3 class="text-xl font-semibold text-darkGrayishBlue mb-2">Plain text snippets</h3>
+        <p class="leading-relaxed">Remove unwanted formatting from copied text for a consistent look.</p>
+      </div>
+      <div class="flex flex-col items-center">
+        
+        <!-- 🖼️ 6. ICON-KA PREVIEW (JAYSHA) -->
+        <img src="images/icon-preview.svg" alt="Preview Icon" class="mb-8 h-10">
+        
+        <h3 class="text-xl font-semibold text-darkGrayishBlue mb-2">Sneak preview</h3>
+        <p class="leading-relaxed">Quick preview of all snippets on your Clipboard for easy matching.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sponsors Section -->
+  <section class="py-12 px-6 max-w-7xl mx-auto">
+    <div class="flex flex-wrap justify-center md:justify-between items-center gap-12 my-8">
+      
+      <!-- 🖼️ 7. LOGO-GA GOOGLE -->
+      <img src="images/logo-google.png" alt="Google Logo" class="max-w-[130px]">
+      
+      <!-- 🖼️ 8. LOGO-GA IBM -->
+      <img src="images/logo-ibm.png" alt="IBM Logo" class="max-w-[130px]">
+      
+      <!-- 🖼️ 9. LOGO-GA MICROSOFT -->
+      <img src="images/logo-microsoft.png" alt="Microsoft Logo" class="max-w-[130px]">
+      
+      <!-- 🖼️ 10. LOGO-GA HP -->
+      <img src="images/logo-hp.png" alt="HP Logo" class="max-w-[130px]">
+      
+      <!-- 🖼️ 11. LOGO-GA VECTOR GRAPHICS -->
+      <img src="images/logo-vector-graphics.png" alt="Vector Graphics Logo" class="max-w-[130px]">
+      
+    </div>
+  </section>
+
+  <!-- Bottom CTA Section -->
+  <section class="py-16 px-6 max-w-7xl mx-auto">
+    <h2 class="text-2xl md:text-3xl font-semibold text-darkGrayishBlue mb-4">Clipboard for iOS and Mac OS</h2>
+    <p class="max-w-2xl mx-auto mb-10 leading-relaxed">Available for free on the App Store. Download it now, connect with your iCloud account and you’re ready to start adding to your clipboard.</p>
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <a href="#" class="bg-strongCyan text-white py-3 px-8 rounded-full font-semibold shadow-md hover:opacity-80 transition duration-200">Download for iOS</a>
+      <a href="#" class="bg-lightBlue text-white py-3 px-8 rounded-full font-semibold shadow-md hover:opacity-80 transition duration-200">Download for Mac</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 py-12 px-6 mt-16">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+      
+      <!-- 🖼️ 12. LOGO-GA SMALL EE FOOTER-KA -->
+      <img src="logo.svg" alt="Clipboard Logo" class="w-14">
+      
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center md:text-left text-darkGrayishBlue font-medium">
+        <a href="#" class="hover:text-strongCyan transition duration-200">FAQs</a>
+        <a href="#" class="hover:text-strongCyan transition duration-200">Contact Us</a>
+        <a href="#" class="hover:text-strongCyan transition duration-200">Privacy Policy</a>
+        <a href="#" class="hover:text-strongCyan transition duration-200">Press Kit</a>
+        <a href="#" class="hover:text-strongCyan transition duration-200">Install Guide</a>
+      </div>
+
+      <div class="flex gap-6">
+        <!-- 🖼️ 13. ICON-KA FACEBOOK -->
+        <a href="#" class="hover:opacity-60 transition duration-200">
+          <img src="images/icon-facebook.svg" alt="Facebook">
+        </a>
+        
+        <!-- 🖼️ 14. ICON-KA TWITTER -->
+        <a href="#" class="hover:opacity-60 transition duration-200">
+          <img src="images/icon-twitter.svg" alt="Twitter">
+        </a>
+        
+        <!-- 🖼️ 15. ICON-KA INSTAGRAM -->
+        <a href="#" class="hover:opacity-60 transition duration-200">
+          <img src="images/icon-instagram.svg" alt="Instagram">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
 </html>
