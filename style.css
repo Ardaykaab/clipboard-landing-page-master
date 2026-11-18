@@ -250,8 +250,7 @@ img {
     justify-content: space-between;
   }
 }
-
-/* Footer */
+ 
 .footer {
   background-color: var(--footer-bg);
   padding: 50px 0;
