@@ -132,3 +132,141 @@ body {
         max-width: 320px;
     }
 }
+
+
+
+
+
+
+
+
+
+===========================================
+           /* QAYBTA 2AAD  */
+/* =========================================== */
+/* .q-2aad {
+    display: flex;
+    gap: 100px;
+    padding-left: 8%;
+    width: 1212px;
+    height: 572px;
+    margin-top: 5%;
+}
+.q-2aad .p1 {
+    color: gray; 
+    width: 155%;
+}
+.q-2aad .p2 {
+    color: gray; 
+    width: 155%;
+}
+.q-2aad .p3 {
+    color: gray; 
+    width: 155%;
+} */
+
+/* responsive design mobile */
+/* @media (max-width: 375px) {
+    .q-2aad{
+        display: flex;
+        flex-direction: column;
+    }
+    .q-2aad img {
+        width: 312px;
+        height: 238px;
+        margin-top: 11px;
+        margin-left: -14px;
+    }
+    .q-2aad .p1 {
+        width: 311px;
+        height: 118px;
+    }
+    .q-2aad .p2 {
+        width: 311px;
+        height: 92px;
+    }
+    .q-2aad .p3 {
+        width: 311px;
+        height: 92px;
+    }
+} */
+
+
+
+/* =========================================== */
+/* QAYBTA 2AAD */
+/* =========================================== */
+
+.q-2aad {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding-left: 8%;
+    max-width: 1212px;
+    margin: 5% auto 0;
+}
+
+.q-2aad img {
+    max-width: 100%;
+    height: auto;
+}
+
+.q-2aad h2 {
+    margin-bottom: 10px;
+}
+
+.q-2aad p {
+    color: gray;
+    max-width: 350px;
+    line-height: 1.6;
+}
+
+.icloud-title {
+    padding-top: 104px;
+}
+
+.history-title {
+    padding-top: 104px;
+}
+
+
+/* =========================================== */
+/* RESPONSIVE DESIGN - MOBILE */
+/* =========================================== */
+
+@media (max-width: 375px) {
+
+    .q-2aad {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        width: 100%;
+        height: auto;
+        padding: 0 20px;
+        margin-top: 40px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .q-2aad img {
+        width: 100%;
+        max-width: 312px;
+        height: auto;
+        margin: 0;
+    }
+
+    .q-2aad > div {
+        width: 100%;
+    }
+
+    .q-2aad h2 {
+        padding-top: 0;
+        margin-top: 35px;
+    }
+    .q-2aad p {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
