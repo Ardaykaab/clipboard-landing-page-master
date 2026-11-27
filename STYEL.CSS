@@ -141,10 +141,10 @@ body {
 
 
 
-===========================================
+/* =========================================== */
            /* QAYBTA 2AAD  */
 /* =========================================== */
-/* .q-2aad {
+.q-2aad {
     display: flex;
     gap: 100px;
     padding-left: 8%;
@@ -163,80 +163,12 @@ body {
 .q-2aad .p3 {
     color: gray; 
     width: 155%;
-} */
+}
+
 
 /* responsive design mobile */
-/* @media (max-width: 375px) {
-    .q-2aad{
-        display: flex;
-        flex-direction: column;
-    }
-    .q-2aad img {
-        width: 312px;
-        height: 238px;
-        margin-top: 11px;
-        margin-left: -14px;
-    }
-    .q-2aad .p1 {
-        width: 311px;
-        height: 118px;
-    }
-    .q-2aad .p2 {
-        width: 311px;
-        height: 92px;
-    }
-    .q-2aad .p3 {
-        width: 311px;
-        height: 92px;
-    }
-} */
-
-
-
-/* =========================================== */
-/* QAYBTA 2AAD */
-/* =========================================== */
-
-.q-2aad {
-    display: flex;
-    align-items: center;
-    gap: 100px;
-    padding-left: 8%;
-    max-width: 1212px;
-    margin: 5% auto 0;
-}
-
-.q-2aad img {
-    max-width: 100%;
-    height: auto;
-}
-
-.q-2aad h2 {
-    margin-bottom: 10px;
-}
-
-.q-2aad p {
-    color: gray;
-    max-width: 350px;
-    line-height: 1.6;
-}
-
-.icloud-title {
-    padding-top: 104px;
-}
-
-.history-title {
-    padding-top: 104px;
-}
-
-
-/* =========================================== */
-/* RESPONSIVE DESIGN - MOBILE */
-/* =========================================== */
-
 @media (max-width: 375px) {
-
-    .q-2aad {
+    .q-2aad{
         flex-direction: column;
         align-items: center;
         gap: 40px;
@@ -263,10 +195,98 @@ body {
         padding-top: 0;
         margin-top: 35px;
     }
+
     .q-2aad p {
         width: 100%;
         max-width: 100%;
         height: auto;
         margin: 0 auto;
+    }
+}
+
+
+
+
+
+
+
+/* =========================================== */
+           /* QAYBTA 3AAD  */
+/* =========================================== */
+.text-Section3{
+    width: 730px;
+    height: 124px;
+    margin-top: 10%;
+    margin-left: 495px;
+}
+.text-Section3 p{
+    color: gray;
+    font-size: 18px;
+    line-height: 30px;
+    align-items: center;
+    width: 730px;
+    height: 60px;
+}
+.img-section3 img{
+    width: 900px;
+    height: 475px;
+    margin-top: 10px;
+    margin-left: 314px;
+}
+/* responsive side  */
+@media (max-width: 375px) {
+
+    #section3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin: 60px auto 0;
+        padding: 0 20px;
+        box-sizing: border-box;
+        text-align: center;
+        margin-left: -90%;
+        margin-top: 50%;
+    }
+
+    .text-Section3 {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        margin-right: -25%;
+    }
+
+    .text-Section3 h2 {
+        font-size: 28px;
+        line-height: 100%;
+        letter-spacing: -0.46px;
+        width: 311px;
+        height: 70px;
+        height: auto;
+        margin: 0 0 20px;
+        display: block;
+    }
+
+    .text-Section3 p {
+        width: 311px;
+        height: 78px;
+        margin: 0 auto;
+        line-height: 26px;
+        font-size: 16px;
+        letter-spacing: 0.12px;
+    }
+
+    .img-section3 {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .img-section3 img {
+        margin-top: 3%;
+        width: 310px;
+        max-width: 311px;
+        height: 182px;
+        margin-left: 98%;
     }
 }
