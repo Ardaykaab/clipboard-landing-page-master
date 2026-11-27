@@ -284,3 +284,4 @@ Ka hor intaadan pull request furin, hubi:
 Challenge-ka asalka ah waxaa leh [Frontend Mentor](https://www.frontendmentor.io?ref=challenge).
 
 **Nasiib Wacan — hadda bilow!** 🚀
+# push-code-to-github
