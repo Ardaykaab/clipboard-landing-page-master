@@ -290,3 +290,157 @@ body {
         margin-left: 98%;
     }
 }
+
+
+
+
+
+
+
+
+
+/* =========================================== */
+           /* QAYBTA 4AAD  */
+/* =========================================== */
+.section-04{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+
+}
+.h2-p p {
+    color: #9EABB2;
+}
+.h2-p {
+    width: 730px;
+    height: 94px;
+    margin-left: 355px;
+}
+
+.allBox-section4{
+    display: flex;
+    align-items: center;
+    width: 1110px;
+    height: 216px;
+    margin-left: 165px;
+    gap: 30px;
+}
+.allBox-section4 .box1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 350px;
+    height: 216px;
+}
+.allBox-section4 .box1 p{
+    color: #9EABB2;
+}
+.allBox-section4 .box2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 350px;
+    height: 182px;
+}
+.allBox-section4 .box2 p{
+    color: #9EABB2;
+}
+.allBox-section4 .box3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 350px;
+    height: 181.96px;
+}
+.allBox-section4 .box3 p{
+    color: #9EABB2;
+}
+/* responsive  */
+@media screen and (max-width: 375px) {
+
+    .section-04 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin-top: 100px;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    /* Heading and Paragraph */
+
+    .h2-p {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        text-align: center;
+    }
+
+    .h2-p h2 {
+        font-size: 27px;
+        margin-bottom: 15px;
+    }
+
+    .h2-p p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    /* All Boxes */
+
+    .allBox-section4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin: 60px 0 0;
+        gap: 55px;
+    }
+
+    /* Box 1, 2, 3 */
+
+    .allBox-section4 .box1,
+    .allBox-section4 .box2,
+    .allBox-section4 .box3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        gap: 15px;
+        text-align: center;
+    }
+
+    /* Images */
+
+    .allBox-section4 img {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 15px;
+    }
+
+    /* Headings */
+
+    .allBox-section4 h2 {
+        font-size: 22px !important;
+        margin: 0;
+    }
+
+    /* Paragraphs */
+
+    .allBox-section4 p {
+        width: 100%;
+        max-width: 320px;
+        font-size: 15px;
+        line-height: 1.6;
+        margin: 0;
+        color: #9EABB2;
+    }
+}
